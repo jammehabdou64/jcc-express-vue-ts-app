@@ -7,28 +7,23 @@
   <div
     class="container mx-auto flex items-center justify-center min-h-[calc(100vh-4rem)] py-12"
   >
-    <div
-      class="rounded-xl border bg-card text-card-foreground shadow w-full max-w-md"
-    >
-      <div class="flex flex-col space-y-1.5 p-6">
-        <div class="font-semibold tracking-tight text-2xl">Login</div>
-        <div class="text-sm text-muted-foreground">
-          Enter your credentials to access your account
-        </div>
-      </div>
-
+    <Card class="w-full max-w-md">
+      <CardHeader>
+        <CardTitle>Login</CardTitle>
+        <CardDescription
+          >Enter your credentials to access your account</CardDescription
+        >
+      </CardHeader>
       <form @submit.prevent="submit">
-        <div class="p-6 pt-0 space-y-4">
+        <CardContent class="space-y-4">
           <div class="space-y-2">
-            <label class="input-label" for="email">Email</label
-            ><input
-              class="form-control"
+            <Label for="email">Email</Label>
+            <Input
               id="email"
-              placeholder="name@example.com"
-              required
-              v-model="form.email"
               type="email"
-              name="email"
+              placeholder="name@example.com"
+              v-model="form.email"
+              required
             />
             <small v-if="form?.errors?.email" class="text-sm text-red-500">
               {{ form?.errors?.email }}</small
@@ -36,45 +31,51 @@
           </div>
           <div class="space-y-2">
             <div class="flex items-center justify-between">
-              <label class="input-label" for="password">Password</label
-              ><a
+              <Label for="password">Password</Label>
+              <Link
+                href="/forgot-password"
                 class="text-sm text-primary hover:underline"
-                href="/auth/forgot-password"
-                >Forgot password?</a
               >
+                Forgot password?
+              </Link>
             </div>
-            <input
-              class="form-control"
+            <Input
               id="password"
-              required
-              v-model="form.password"
               type="password"
-              name="password"
+              v-model="form.password"
+              required
             />
           </div>
-        </div>
-        <div class="items-center p-6 pt-0 flex flex-col space-y-4">
-          <button
-            class="submit-button"
-            type="submit"
-            :disabled="form?.processing"
-          >
-            {{ form?.processing ? "Logging in..." : "Login" }}
-          </button>
+        </CardContent>
+        <CardFooter class="flex flex-col space-y-4">
+          <Button type="submit" class="w-full" :disabled="form.processing">
+            {{ form.processing ? "Logging in..." : "Login" }}
+          </Button>
           <div class="text-center text-sm">
             Don't have an account?
-            <Link class="text-primary hover:underline" href="/register"
-              >Register</Link
-            >
+            <Link href="/register" class="text-primary hover:underline">
+              Register
+            </Link>
           </div>
-        </div>
+        </CardFooter>
       </form>
-    </div>
+    </Card>
   </div>
 </template>
 
 <script setup lang="ts">
 import { Link, useForm, Head } from "@inertiajs/vue3";
+import { Button } from "@/Components/ui/button";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardFooter,
+  CardHeader,
+  CardTitle,
+} from "@/Components/ui/card";
+import { Input } from "@/Components/ui/input";
+import { Label } from "@/Components/ui/label";
 import Header from "@/Components/Header.vue";
 const form = useForm({
   email: "",
