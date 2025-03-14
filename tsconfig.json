@@ -1,0 +1,34 @@
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "declaration": true,
+    "declarationMap": true, // Optional, generates source maps for declarations
+    "baseUrl": ".",
+    "paths": {
+      "@/Model/*": ["app/Models/*"],
+      "@Controllers/*": ["app/Http/Controllers/*"],
+      "@/Request/*": ["app/Http/Requests/*"],
+      "@Providers/*": ["app/Providers/*"],
+      "@/Services/*": ["app/Services/*"],
+      "@/*": ["./resources/js/*"]
+    },
+    "esModuleInterop": true,
+    "outDir": "./build",
+    "strict": true,
+    "target": "ES2021",
+    "skipLibCheck": true,
+    "allowSyntheticDefaultImports": true,
+    "resolveJsonModule": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "types": ["vite/client"]
+  },
+  "include": ["**/*"],
+  "exclude": ["node_modules"]
+}
