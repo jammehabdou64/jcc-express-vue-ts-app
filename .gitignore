@@ -10,7 +10,7 @@
 # production
 /build
 /public/build
-/bootstrap
+
 /dist
 # misc
 .env
