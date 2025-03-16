@@ -23,10 +23,11 @@
           <span class="font-bold">JCC Framework</span>
         </Link>
         <nav class="ml-auto flex gap-4 sm:gap-6">
-          <Link
+          <a
             class="text-sm font-medium hover:underline underline-offset-4"
-            href="/"
-            >Docs</Link
+            href="https://github.com/jammehabdou64/new-jcc-express-mvc-app"
+            target="_blank"
+            >Docs</a
           >
           <Link
             class="text-sm font-medium hover:underline underline-offset-4"
