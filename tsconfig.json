@@ -27,7 +27,7 @@
     "noEmit": true,
     "isolatedModules": true,
     "jsx": "preserve",
-    "types": ["vite/client"]
+    "types": ["vite/client", "bun"]
   },
   "include": ["**/*"],
   "exclude": ["node_modules"]
