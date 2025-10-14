@@ -8,6 +8,7 @@ export default defineConfig({
     laravel({
       input: ["resources/css/app.css", "resources/js/app.ts"],
       refresh: true,
+      ssr: "resources/js/ssr.ts",
     }),
     vue(),
     tailwind(),
