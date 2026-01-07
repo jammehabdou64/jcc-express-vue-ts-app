@@ -3,8 +3,8 @@
   "compilerOptions": {
     "allowJs": true,
     "module": "ESNext",
-    "declaration": true,
-    "declarationMap": true,
+    "declaration": false,
+    "declarationMap": false,
     "esModuleInterop": true,
     "outDir": "./build",
     "strict": true,
@@ -15,9 +15,8 @@
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
     "moduleResolution": "bundler",
-    "jsx": "react-jsx",
     "isolatedModules": true,
-    "noEmit": true,
+    "noEmit": false,
     "types": ["vite/client"],
 
     "skipDefaultLibCheck": true
