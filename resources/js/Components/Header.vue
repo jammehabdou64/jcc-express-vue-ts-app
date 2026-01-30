@@ -25,7 +25,7 @@
         <nav class="ml-auto flex gap-4 sm:gap-6">
           <a
             class="text-sm font-medium hover:underline underline-offset-4"
-            href="https://github.com/jammehabdou64/new-jcc-express-mvc-app"
+            href="https://www.jcc-express.uk"
             target="_blank"
             >Docs</a
           >
