@@ -1,13 +1,15 @@
-import { auth } from "./auth";
 import { cors } from "./cors";
+import { database } from "./database";
 import { engine } from "./engine";
+import queue from "./queue";
 import { rateLimit } from "./rate-limit";
+import { service } from "./service";
 
 export const config = {
-  auth,
-
   engine,
-
   cors,
-  rateLimit
+  queue,
+  rateLimit,
+  database,
+  service,
 };
