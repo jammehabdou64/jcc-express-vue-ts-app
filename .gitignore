@@ -10,7 +10,9 @@
 # production
 /build
 /public/build
+/public/hot
 /boostrap/ssr
+/storage/framework
 
 /dist
 # misc
