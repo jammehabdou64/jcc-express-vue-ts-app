@@ -42,7 +42,7 @@
     "express-session": "^1.19.0",
     "fs-extra": "^11.3.6",
     "inflection": "^3.0.2",
-    "jcc-express-mvc": "^1.9.7",
+    "jcc-express-mvc": "^1.9.8",
     "jsonwebtoken": "^9.0.3",
     "knex": "^3.3.0",
     "lucide-vue-next": "^0.562.0",
@@ -70,13 +70,13 @@
     "eslint": "^9.39.4",
     "laravel-vite-plugin": "^3.1.0",
     "postcss": "^8.5.16",
-    "prettier": "^3.9.3",
+    "prettier": "^3.9.4",
     "prettier-plugin-blade": "^2.1.21",
     "prettier-plugin-tailwindcss": "^0.7.4",
     "tailwindcss": "^4.3.2",
     "tsconfig-paths": "^4.2.0",
     "typescript": "^6.0.3",
-    "vite": "^8.1.0",
-    "vue-tsc": "^3.3.5"
+    "vite": "^8.1.2",
+    "vue-tsc": "^3.3.6"
   }
 }
